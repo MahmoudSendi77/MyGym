@@ -18,4 +18,4 @@ Date dd;
 Date df;
 */
 
-void ajouter(long cin2, int rolx ,char username1[],char mail1[] ,char abonnement1[] ,long telephone1,int ddj,int ddm,int dda,int dfj,int dfm,int dfa);
+void ajouter(char login[],char password[],int role);

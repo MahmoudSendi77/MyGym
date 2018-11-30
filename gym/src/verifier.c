@@ -7,7 +7,7 @@ int verifier(char login[],char password[])
 int role,a=1,b=1,c=-1;
 char login1[20];
 char password1[20];
-f=fopen("/home/jasser/gym/src/login.txt","r");
+f=fopen("/home/jasser/Desktop/MyGym/gym/src/login.txt","r");
 if (f!=NULL)
 {
 while(fscanf(f,"%s %s %d",login1, password1,&role)!=EOF)
