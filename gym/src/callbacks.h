@@ -44,13 +44,25 @@ on_button15adh_clicked                 (GtkButton       *button,
 
 void
 on_admin_set_focus                     (GtkWindow       *window,
-                                        GtkWidget       *widget,
+                                        GtkWidget       *objet_graphique,
                                         gpointer         user_data);
 
 void
-on_supprimer_as_admin_clicked          (GtkButton       *button,
+on_supprimer_as_admin_clicked          (GtkWidget         *objet_graphique,
                                         gpointer         user_data);
 
 void
-on_modifier_as_admin_clicked           (GtkButton       *button,
+on_modifier_as_admin_clicked           (GtkWidget         *objet_graphique,
                                         gpointer         user_data);
+
+
+gboolean
+on_notebook1_select_page               (GtkNotebook     *notebook,
+                                        gboolean         move_focus,
+                                        gpointer         user_data);
+
+
+void
+on_affichetree_clicked                 (GtkWidget       *objet,
+                                        gpointer         user_data);
+

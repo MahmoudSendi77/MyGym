@@ -12,4 +12,4 @@ GtkWidget* create_adherent (void);
 GtkWidget* create_coach (void);
 GtkWidget* create_dietecien (void);
 GtkWidget* create_kine (void);
-GtkWidget* create_menu1 (void);
+GtkWidget* create_test (void);

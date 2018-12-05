@@ -91,7 +91,8 @@ CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am_gym_OBJECTS = main.$(OBJEXT) support.$(OBJEXT) interface.$(OBJEXT) \
-	callbacks.$(OBJEXT) verifier.$(OBJEXT) ajout.$(OBJEXT)
+	callbacks.$(OBJEXT) verifier.$(OBJEXT) ajout.$(OBJEXT) \
+	affichage.$(OBJEXT)
 gym_OBJECTS = $(am_gym_OBJECTS)
 am__DEPENDENCIES_1 =
 gym_DEPENDENCIES = $(am__DEPENDENCIES_1)
@@ -271,7 +272,8 @@ gym_SOURCES = \
 	interface.c interface.h \
 	callbacks.c callbacks.h \
 	verifier.c verifier.h \
-	ajout.c ajout.h
+	ajout.c ajout.h \
+	affichage.c affichage.h
 
 gym_LDADD = @PACKAGE_LIBS@ $(INTLLIBS)
 all: all-am
@@ -361,6 +363,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/affichage.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ajout.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/callbacks.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/interface.Po@am__quote@
