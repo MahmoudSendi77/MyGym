@@ -1246,6 +1246,10 @@ GtkWidget*
 create_adherent (void)
 {
   GtkWidget *adherent;
+<<<<<<< HEAD
+  GtkWidget *fixed7;
+  GtkWidget *label10;
+=======
   GtkWidget *notebook2;
   GtkWidget *vbox5;
   GtkWidget *fixed14;
@@ -1315,11 +1319,27 @@ create_adherent (void)
   GtkWidget *label531adh;
   GtkWidget *label541;
   GtkWidget *label542;
+>>>>>>> 77272246bd4dcfe949a2e5806fb78ebd17478063
 
   adherent = gtk_window_new (GTK_WINDOW_TOPLEVEL);
   gtk_widget_set_size_request (adherent, 400, 250);
   gtk_window_set_title (GTK_WINDOW (adherent), _("adherent"));
 
+<<<<<<< HEAD
+  fixed7 = gtk_fixed_new ();
+  gtk_widget_show (fixed7);
+  gtk_container_add (GTK_CONTAINER (adherent), fixed7);
+
+  label10 = gtk_label_new (_("espace adherent \n"));
+  gtk_widget_show (label10);
+  gtk_fixed_put (GTK_FIXED (fixed7), label10, 48, 48);
+  gtk_widget_set_size_request (label10, 240, 168);
+
+  /* Store pointers to all widgets, for use by lookup_widget(). */
+  GLADE_HOOKUP_OBJECT_NO_REF (adherent, adherent, "adherent");
+  GLADE_HOOKUP_OBJECT (adherent, fixed7, "fixed7");
+  GLADE_HOOKUP_OBJECT (adherent, label10, "label10");
+=======
   notebook2 = gtk_notebook_new ();
   gtk_widget_show (notebook2);
   gtk_container_add (GTK_CONTAINER (adherent), notebook2);
@@ -1720,6 +1740,7 @@ create_adherent (void)
   GLADE_HOOKUP_OBJECT (adherent, label531adh, "label531adh");
   GLADE_HOOKUP_OBJECT (adherent, label541, "label541");
   GLADE_HOOKUP_OBJECT (adherent, label542, "label542");
+>>>>>>> 77272246bd4dcfe949a2e5806fb78ebd17478063
 
   return adherent;
 }
@@ -1756,13 +1777,593 @@ GtkWidget*
 create_dietecien (void)
 {
   GtkWidget *dietecien;
+<<<<<<< HEAD
+  GtkWidget *notebook1;
+  GtkWidget *fixed12;
+  GtkWidget *fixed26;
+  GtkWidget *label14;
+  GtkWidget *combobox2;
+  GtkWidget *detlabel28;
+  GtkWidget *detlabel19;
+  GtkWidget *detlabel17000;
+  GtkWidget *detlabel1600;
+  GtkWidget *detlabel15000;
+  GtkWidget *detlabel17;
+  GtkWidget *detlabel26;
+  GtkWidget *detlabel25;
+  GtkWidget *detlabel18000;
+  GtkWidget *detlabel21;
+  GtkWidget *detlabel19;
+  GtkWidget *detlabel20;
+  GtkWidget *detlabel42;
+  GtkWidget *detlabel27;
+  GtkWidget *image2;
+  GtkWidget *detlabel18;
+  GtkObject *detspinbutton7_adj;
+  GtkWidget *detspinbutton7;
+  GtkObject *detspinbutton8_adj;
+  GtkWidget *detspinbutton8;
+  GtkWidget *detlabel53141414;
+  GtkWidget *detlabel22;
+  GtkWidget *detlabel014;
+  GtkWidget *fixed27;
+  GtkWidget *dettreeview1;
+  GtkWidget *detlabel30;
+  GtkWidget *detlabel51777777777;
+  GtkWidget *detentry11;
+  GtkWidget *detbutton5444444;
+  GtkWidget *alignment2;
+  GtkWidget *hbox2;
+  GtkWidget *image4;
+  GtkWidget *label52;
+  GtkWidget *detlabel15;
+  GtkWidget *fixed21;
+  GtkWidget *detentry6;
+  GtkWidget *detentry7;
+  GtkWidget *detentry8;
+  GtkWidget *detentry9;
+  GtkWidget *detentry10;
+  GtkWidget *detlabel48;
+  GtkWidget *detlabel47;
+  GtkWidget *detlabel46;
+  GtkWidget *detlabel45;
+  GtkWidget *detlabel44;
+  GtkWidget *detlabel41;
+  GtkWidget *detlabel43;
+  GtkWidget *detlabel34;
+  GtkWidget *detlabel38;
+  GtkWidget *detlabel37;
+  GtkWidget *detlabel40;
+  GtkWidget *detentry12;
+  GtkWidget *detbutton6;
+  GtkWidget *alignment1;
+  GtkWidget *hbox1;
+  GtkWidget *image3;
+  GtkWidget *label49;
+  GtkWidget *detentry13;
+  GtkObject *detspinbutton1_adj;
+  GtkWidget *detspinbutton1;
+  GtkWidget *detlabel42;
+  GtkObject *detspinbutton2_adj;
+  GtkWidget *detspinbutton2;
+  GtkObject *detspinbutton3_adj;
+  GtkWidget *detspinbutton3;
+  GtkWidget *detlabel31;
+  GtkObject *detspinbutton97474_adj;
+  GtkWidget *detspinbutton97474;
+  GtkObject *detspinbutton10_adj;
+  GtkWidget *detspinbutton10;
+  GtkWidget *detlabel39;
+  GtkWidget *detlabel36;
+  GtkWidget *detabel16;
+=======
   GtkWidget *fixed9;
   GtkWidget *label12;
+>>>>>>> 77272246bd4dcfe949a2e5806fb78ebd17478063
 
   dietecien = gtk_window_new (GTK_WINDOW_TOPLEVEL);
   gtk_widget_set_size_request (dietecien, 400, 250);
   gtk_window_set_title (GTK_WINDOW (dietecien), _("dietecien"));
 
+<<<<<<< HEAD
+  notebook1 = gtk_notebook_new ();
+  gtk_widget_show (notebook1);
+  gtk_container_add (GTK_CONTAINER (dietecien), notebook1);
+  gtk_container_set_border_width (GTK_CONTAINER (notebook1), 1);
+  gtk_notebook_set_scrollable (GTK_NOTEBOOK (notebook1), TRUE);
+
+  fixed12 = gtk_fixed_new ();
+  gtk_widget_show (fixed12);
+  gtk_container_add (GTK_CONTAINER (notebook1), fixed12);
+  gtk_widget_set_size_request (fixed12, 821, 20);
+
+  fixed26 = gtk_fixed_new ();
+  gtk_widget_show (fixed26);
+  gtk_fixed_put (GTK_FIXED (fixed12), fixed26, 128, 96);
+  gtk_widget_set_size_request (fixed26, 50, 50);
+
+  label14 = gtk_label_new ("");
+  gtk_widget_show (label14);
+  gtk_fixed_put (GTK_FIXED (fixed12), label14, 104, 24);
+  gtk_widget_set_size_request (label14, 97, 24);
+
+  combobox2 = gtk_combo_box_new_text ();
+  gtk_widget_show (combobox2);
+  gtk_fixed_put (GTK_FIXED (fixed12), combobox2, 272, 240);
+  gtk_widget_set_size_request (combobox2, 37, 33);
+
+  detlabel28 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>*Date_de_naissance:</b></span>"));
+  gtk_widget_show (detlabel28);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel28, 384, 320);
+  gtk_widget_set_size_request (detlabel28, 208, 40);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel28), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel28), 1, 1);
+
+  detlabel19 = gtk_label_new (_("label19"));
+  gtk_widget_show (detlabel19);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel19, 552, 264);
+  gtk_widget_set_size_request (detlabel19, 49, 17);
+
+  detlabel17000 = gtk_label_new (_("label17"));
+  gtk_widget_show (detlabel17000);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel17000, 560, 128);
+  gtk_widget_set_size_request (detlabel17000, 49, 17);
+
+  detlabel1600 = gtk_label_new (_("label16"));
+  gtk_widget_show (detlabel1600);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel1600, 552, 80);
+  gtk_widget_set_size_request (detlabel1600, 49, 17);
+
+  detlabel15000 = gtk_label_new (_("label15"));
+  gtk_widget_show (detlabel15000);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel15000, 576, 32);
+  gtk_widget_set_size_request (detlabel15000, 49, 17);
+
+  detlabel17 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>*Nom:</b></span>"));
+  gtk_widget_show (detlabel17);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel17, 368, 32);
+  gtk_widget_set_size_request (detlabel17, 80, 24);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel17), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel17), 1, 1);
+
+  detlabel26 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>*Numero_de_tel:</b></span>"));
+  gtk_widget_show (detlabel26);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel26, 384, 192);
+  gtk_widget_set_size_request (detlabel26, 176, 32);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel26), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel26), 1, 1);
+
+  detlabel25 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>*CIN:</b></span>"));
+  gtk_widget_show (detlabel25);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel25, 384, 128);
+  gtk_widget_set_size_request (detlabel25, 64, 33);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel25), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel25), 1, 1);
+
+  detlabel18000 = gtk_label_new (_("label18"));
+  gtk_widget_show (detlabel18000);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel18000, 592, 200);
+  gtk_widget_set_size_request (detlabel18000, 49, 17);
+
+  detlabel21 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>*Disponibilit\303\251:</b></span>"));
+  gtk_widget_show (detlabel21);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel21, 24, 568);
+  gtk_widget_set_size_request (detlabel21, 144, 32);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel21), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel21), 1, 1);
+
+  detlabel19 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>De:</b></span>"));
+  gtk_widget_show (detlabel19);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel19, 144, 632);
+  gtk_widget_set_size_request (detlabel19, 80, 25);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel19), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel19), 1, 1);
+
+  detlabel20 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>A:</b></span>"));
+  gtk_widget_show (detlabel20);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel20, 312, 624);
+  gtk_widget_set_size_request (detlabel20, 72, 33);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel20), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel20), 1, 1);
+
+  detlabel42 = gtk_label_new (_("label42"));
+  gtk_widget_show (detlabel42);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel42, 352, 504);
+  gtk_widget_set_size_request (detlabel42, 49, 17);
+
+  detlabel27 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>*Mail:</b></span>"));
+  gtk_widget_show (detlabel27);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel27, 384, 248);
+  gtk_widget_set_size_request (detlabel27, 64, 33);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel27), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel27), 1, 1);
+
+  image2 = create_pixmap (dietecien, "profil.jpg");
+  gtk_widget_show (image2);
+  gtk_fixed_put (GTK_FIXED (fixed12), image2, 8, 0);
+  gtk_widget_set_size_request (image2, 352, 408);
+
+  detlabel18 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>*Prenom:</b></span>"));
+  gtk_widget_show (detlabel18);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel18, 376, 72);
+  gtk_widget_set_size_request (detlabel18, 96, 32);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel18), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel18), 1, 1);
+
+  detspinbutton7_adj = gtk_adjustment_new (22, 8, 22, 1, 10, 10);
+  detspinbutton7 = gtk_spin_button_new (GTK_ADJUSTMENT (detspinbutton7_adj), 1, 0);
+  gtk_widget_show (detspinbutton7);
+  gtk_fixed_put (GTK_FIXED (fixed12), detspinbutton7, 232, 624);
+  gtk_widget_set_size_request (detspinbutton7, 70, 34);
+
+  detspinbutton8_adj = gtk_adjustment_new (1, 8, 22, 1, 10, 10);
+  detspinbutton8 = gtk_spin_button_new (GTK_ADJUSTMENT (detspinbutton8_adj), 1, 0);
+  gtk_widget_show (detspinbutton8);
+  gtk_fixed_put (GTK_FIXED (fixed12), detspinbutton8, 408, 624);
+  gtk_widget_set_size_request (detspinbutton8, 70, 34);
+
+  detlabel53141414 = gtk_label_new (_("label53"));
+  gtk_widget_show (detlabel53141414);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel53141414, 656, 344);
+  gtk_widget_set_size_request (detlabel53141414, 49, 17);
+
+  detlabel22 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>*Jours_de_travail:</b></span>"));
+  gtk_widget_show (detlabel22);
+  gtk_fixed_put (GTK_FIXED (fixed12), detlabel22, 0, 496);
+  gtk_widget_set_size_request (detlabel22, 296, 32);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel22), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel22), 1, 1);
+
+  detlabel014 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"red\" size=\"large\"><b>profile:</b></span>"));
+  gtk_widget_show (detlabel014);
+  gtk_notebook_set_tab_label (GTK_NOTEBOOK (notebook1), gtk_notebook_get_nth_page (GTK_NOTEBOOK (notebook1), 0), detlabel014);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel014), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel014), 1, 1);
+
+  fixed27 = gtk_fixed_new ();
+  gtk_widget_show (fixed27);
+  gtk_container_add (GTK_CONTAINER (notebook1), fixed27);
+
+  dettreeview1 = gtk_tree_view_new ();
+  gtk_widget_show (dettreeview1);
+  gtk_fixed_put (GTK_FIXED (fixed27), dettreeview1, 0, 80);
+  gtk_widget_set_size_request (dettreeview1, 300, 200);
+
+  detlabel30 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"purple\" size=\"large\"><b>*Liste_des_adherants:</b></span>"));
+  gtk_widget_show (detlabel30);
+  gtk_fixed_put (GTK_FIXED (fixed27), detlabel30, 0, 32);
+  gtk_widget_set_size_request (detlabel30, 232, 40);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel30), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel30), 1, 1);
+
+  detlabel51777777777 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"green\" size=\"large\"><b>*Fiche_medicale:</b></span>"));
+  gtk_widget_show (detlabel51777777777);
+  gtk_fixed_put (GTK_FIXED (fixed27), detlabel51777777777, 232, 0);
+  gtk_widget_set_size_request (detlabel51777777777, 240, 56);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel51777777777), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel51777777777), 1, 1);
+
+  detentry11 = gtk_entry_new ();
+  gtk_widget_show (detentry11);
+  gtk_fixed_put (GTK_FIXED (fixed27), detentry11, 472, 24);
+  gtk_widget_set_size_request (detentry11, 172, 34);
+  gtk_entry_set_invisible_char (GTK_ENTRY (detentry11), 8226);
+
+  detbutton5444444 = gtk_button_new ();
+  gtk_widget_show (detbutton5444444);
+  gtk_fixed_put (GTK_FIXED (fixed27), detbutton5444444, 656, 24);
+  gtk_widget_set_size_request (detbutton5444444, 70, 33);
+
+  alignment2 = gtk_alignment_new (0.5, 0.5, 0, 0);
+  gtk_widget_show (alignment2);
+  gtk_container_add (GTK_CONTAINER (detbutton5444444), alignment2);
+
+  hbox2 = gtk_hbox_new (FALSE, 2);
+  gtk_widget_show (hbox2);
+  gtk_container_add (GTK_CONTAINER (alignment2), hbox2);
+
+  image4 = gtk_image_new_from_stock ("gtk-apply", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image4);
+  gtk_box_pack_start (GTK_BOX (hbox2), image4, FALSE, FALSE, 0);
+
+  label52 = gtk_label_new_with_mnemonic (_("00"));
+  gtk_widget_show (label52);
+  gtk_box_pack_start (GTK_BOX (hbox2), label52, FALSE, FALSE, 0);
+
+  detlabel15 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"red\" size=\"large\"><b>adherant:</b></span>"));
+  gtk_widget_show (detlabel15);
+  gtk_notebook_set_tab_label (GTK_NOTEBOOK (notebook1), gtk_notebook_get_nth_page (GTK_NOTEBOOK (notebook1), 1), detlabel15);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel15), TRUE);
+
+  fixed21 = gtk_fixed_new ();
+  gtk_widget_show (fixed21);
+  gtk_container_add (GTK_CONTAINER (notebook1), fixed21);
+
+  detentry6 = gtk_entry_new ();
+  gtk_widget_show (detentry6);
+  gtk_fixed_put (GTK_FIXED (fixed21), detentry6, 120, 72);
+  gtk_widget_set_size_request (detentry6, 172, 34);
+  gtk_entry_set_invisible_char (GTK_ENTRY (detentry6), 8226);
+
+  detentry7 = gtk_entry_new ();
+  gtk_widget_show (detentry7);
+  gtk_fixed_put (GTK_FIXED (fixed21), detentry7, 168, 120);
+  gtk_widget_set_size_request (detentry7, 172, 34);
+  gtk_entry_set_invisible_char (GTK_ENTRY (detentry7), 8226);
+
+  detentry8 = gtk_entry_new ();
+  gtk_widget_show (detentry8);
+  gtk_fixed_put (GTK_FIXED (fixed21), detentry8, 144, 168);
+  gtk_widget_set_size_request (detentry8, 172, 34);
+  gtk_entry_set_invisible_char (GTK_ENTRY (detentry8), 8226);
+
+  detentry9 = gtk_entry_new ();
+  gtk_widget_show (detentry9);
+  gtk_fixed_put (GTK_FIXED (fixed21), detentry9, 128, 208);
+  gtk_widget_set_size_request (detentry9, 172, 34);
+  gtk_entry_set_max_length (GTK_ENTRY (detentry9), 2);
+  gtk_entry_set_invisible_char (GTK_ENTRY (detentry9), 8226);
+
+  detentry10 = gtk_entry_new ();
+  gtk_widget_show (detentry10);
+  gtk_fixed_put (GTK_FIXED (fixed21), detentry10, 104, 256);
+  gtk_widget_set_size_request (detentry10, 172, 34);
+  gtk_entry_set_invisible_char (GTK_ENTRY (detentry10), 8226);
+
+  detlabel48 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>*Prenom:</b></span>"));
+  gtk_widget_show (detlabel48);
+  gtk_fixed_put (GTK_FIXED (fixed21), detlabel48, 32, 120);
+  gtk_widget_set_size_request (detlabel48, 104, 32);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel48), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel48), 1, 1);
+
+  detlabel47 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>*CIN:</b></span>"));
+  gtk_widget_show (detlabel47);
+  gtk_fixed_put (GTK_FIXED (fixed21), detlabel47, 32, 160);
+  gtk_widget_set_size_request (detlabel47, 72, 32);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel47), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel47), 1, 1);
+
+  detlabel46 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>*Tel:</b></span>"));
+  gtk_widget_show (detlabel46);
+  gtk_fixed_put (GTK_FIXED (fixed21), detlabel46, 40, 192);
+  gtk_widget_set_size_request (detlabel46, 56, 40);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel46), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel46), 1, 1);
+
+  detlabel45 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>*Mail:</b></span>"));
+  gtk_widget_show (detlabel45);
+  gtk_fixed_put (GTK_FIXED (fixed21), detlabel45, 32, 256);
+  gtk_widget_set_size_request (detlabel45, 64, 32);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel45), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel45), 1, 1);
+
+  detlabel44 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>*Date_de_naissance:</b></span>"));
+  gtk_widget_show (detlabel44);
+  gtk_fixed_put (GTK_FIXED (fixed21), detlabel44, 40, 328);
+  gtk_widget_set_size_request (detlabel44, 216, 32);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel44), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel44), 1, 1);
+
+  detlabel41 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>Jour:</b></span>"));
+  gtk_widget_show (detlabel41);
+  gtk_fixed_put (GTK_FIXED (fixed21), detlabel41, 152, 376);
+  gtk_widget_set_size_request (detlabel41, 64, 25);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel41), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel41), 1, 1);
+
+  detlabel43 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>Ann\303\251e:</b></span>"));
+  gtk_widget_show (detlabel43);
+  gtk_fixed_put (GTK_FIXED (fixed21), detlabel43, 520, 376);
+  gtk_widget_set_size_request (detlabel43, 72, 33);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel43), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel43), 1, 1);
+
+  detlabel34 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"purple\" size=\"large\"><b>//merci_de_verifier_vos_infos_avant_de_les_modifier://</b></span>"));
+  gtk_widget_show (detlabel34);
+  gtk_fixed_put (GTK_FIXED (fixed21), detlabel34, 376, 16);
+  gtk_widget_set_size_request (detlabel34, 624, 48);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel34), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel34), 1, 1);
+
+  detlabel38 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>*Disponibilt\303\251:</b></span>"));
+  gtk_widget_show (detlabel38);
+  gtk_fixed_put (GTK_FIXED (fixed21), detlabel38, 0, 448);
+  gtk_widget_set_size_request (detlabel38, 192, 40);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel38), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel38), 1, 1);
+
+  detlabel37 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>*Mot_de_passe:</b></span>"));
+  gtk_widget_show (detlabel37);
+  gtk_fixed_put (GTK_FIXED (fixed21), detlabel37, 48, 592);
+  gtk_widget_set_size_request (detlabel37, 160, 40);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel37), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel37), 1, 1);
+
+  detlabel40 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>A:</b></span>"));
+  gtk_widget_show (detlabel40);
+  gtk_fixed_put (GTK_FIXED (fixed21), detlabel40, 384, 520);
+  gtk_widget_set_size_request (detlabel40, 56, 25);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel40), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel40), 1, 1);
+
+  detentry12 = gtk_entry_new ();
+  gtk_widget_show (detentry12);
+  gtk_fixed_put (GTK_FIXED (fixed21), detentry12, 256, 592);
+  gtk_widget_set_size_request (detentry12, 172, 34);
+  gtk_entry_set_invisible_char (GTK_ENTRY (detentry12), 8226);
+
+  detbutton6 = gtk_button_new ();
+  gtk_widget_show (detbutton6);
+  gtk_fixed_put (GTK_FIXED (fixed21), detbutton6, 472, 728);
+  gtk_widget_set_size_request (detbutton6, 70, 33);
+
+  alignment1 = gtk_alignment_new (0.5, 0.5, 0, 0);
+  gtk_widget_show (alignment1);
+  gtk_container_add (GTK_CONTAINER (detbutton6), alignment1);
+
+  hbox1 = gtk_hbox_new (FALSE, 2);
+  gtk_widget_show (hbox1);
+  gtk_container_add (GTK_CONTAINER (alignment1), hbox1);
+
+  image3 = gtk_image_new_from_stock ("gtk-edit", GTK_ICON_SIZE_BUTTON);
+  gtk_widget_show (image3);
+  gtk_box_pack_start (GTK_BOX (hbox1), image3, FALSE, FALSE, 0);
+
+  label49 = gtk_label_new_with_mnemonic (_("Modifier"));
+  gtk_widget_show (label49);
+  gtk_box_pack_start (GTK_BOX (hbox1), label49, FALSE, FALSE, 0);
+
+  detentry13 = gtk_entry_new ();
+  gtk_widget_show (detentry13);
+  gtk_fixed_put (GTK_FIXED (fixed21), detentry13, 368, 648);
+  gtk_widget_set_size_request (detentry13, 172, 34);
+  gtk_entry_set_invisible_char (GTK_ENTRY (detentry13), 8226);
+
+  detspinbutton1_adj = gtk_adjustment_new (12, 1, 31, 1, 10, 10);
+  detspinbutton1 = gtk_spin_button_new (GTK_ADJUSTMENT (detspinbutton1_adj), 1, 0);
+  gtk_widget_show (detspinbutton1);
+  gtk_fixed_put (GTK_FIXED (fixed21), detspinbutton1, 240, 368);
+  gtk_widget_set_size_request (detspinbutton1, 70, 34);
+
+  detlabel42 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>Mois</b></span>"));
+  gtk_widget_show (detlabel42);
+  gtk_fixed_put (GTK_FIXED (fixed21), detlabel42, 336, 376);
+  gtk_widget_set_size_request (detlabel42, 64, 33);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel42), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel42), 1, 1);
+
+  detspinbutton2_adj = gtk_adjustment_new (1, 1, 12, 1, 10, 10);
+  detspinbutton2 = gtk_spin_button_new (GTK_ADJUSTMENT (detspinbutton2_adj), 1, 0);
+  gtk_widget_show (detspinbutton2);
+  gtk_fixed_put (GTK_FIXED (fixed21), detspinbutton2, 408, 376);
+  gtk_widget_set_size_request (detspinbutton2, 70, 34);
+
+  detspinbutton3_adj = gtk_adjustment_new (1, 1900, 2018, 1, 10, 10);
+  detspinbutton3 = gtk_spin_button_new (GTK_ADJUSTMENT (detspinbutton3_adj), 1, 0);
+  gtk_widget_show (detspinbutton3);
+  gtk_fixed_put (GTK_FIXED (fixed21), detspinbutton3, 608, 376);
+  gtk_widget_set_size_request (detspinbutton3, 70, 34);
+
+  detlabel31 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>*Nom:</b></span>"));
+  gtk_widget_show (detlabel31);
+  gtk_fixed_put (GTK_FIXED (fixed21), detlabel31, 24, 88);
+  gtk_widget_set_size_request (detlabel31, 80, 25);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel31), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel31), 1, 1);
+
+  detspinbutton97474_adj = gtk_adjustment_new (1, 8, 22, 1, 10, 10);
+  detspinbutton97474 = gtk_spin_button_new (GTK_ADJUSTMENT (detspinbutton97474_adj), 1, 0);
+  gtk_widget_show (detspinbutton97474);
+  gtk_fixed_put (GTK_FIXED (fixed21), detspinbutton97474, 264, 520);
+  gtk_widget_set_size_request (detspinbutton97474, 70, 34);
+
+  detspinbutton10_adj = gtk_adjustment_new (1, 8, 22, 1, 10, 10);
+  detspinbutton10 = gtk_spin_button_new (GTK_ADJUSTMENT (detspinbutton10_adj), 1, 0);
+  gtk_widget_show (detspinbutton10);
+  gtk_fixed_put (GTK_FIXED (fixed21), detspinbutton10, 464, 512);
+  gtk_widget_set_size_request (detspinbutton10, 70, 34);
+
+  detlabel39 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>De:</b></span>"));
+  gtk_widget_show (detlabel39);
+  gtk_fixed_put (GTK_FIXED (fixed21), detlabel39, 168, 520);
+  gtk_widget_set_size_request (detlabel39, 56, 25);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel39), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel39), 1, 1);
+
+  detlabel36 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"black\" size=\"large\"><b>Jours_de_travail:</b></span>"));
+  gtk_widget_show (detlabel36);
+  gtk_fixed_put (GTK_FIXED (fixed21), detlabel36, 0, 664);
+  gtk_widget_set_size_request (detlabel36, 336, 32);
+  gtk_label_set_use_markup (GTK_LABEL (detlabel36), TRUE);
+  gtk_misc_set_alignment (GTK_MISC (detlabel36), 1, 1);
+
+  detabel16 = gtk_label_new (_("<span font_desc=\"Purisa\" foreground =\"red\" size=\"large\"><b>modifier:</b></span>"));
+  gtk_widget_show (detabel16);
+  gtk_notebook_set_tab_label (GTK_NOTEBOOK (notebook1), gtk_notebook_get_nth_page (GTK_NOTEBOOK (notebook1), 2), detabel16);
+  gtk_label_set_use_markup (GTK_LABEL (detabel16), TRUE);
+
+  g_signal_connect ((gpointer) detbutton5444444, "clicked",
+                    G_CALLBACK (on_detbutton5444444_clicked),
+                    NULL);
+  g_signal_connect ((gpointer) detbutton6, "clicked",
+                    G_CALLBACK (on_detbutton6_clicked),
+                    NULL);
+
+  /* Store pointers to all widgets, for use by lookup_widget(). */
+  GLADE_HOOKUP_OBJECT_NO_REF (dietecien, dietecien, "dietecien");
+  GLADE_HOOKUP_OBJECT (dietecien, notebook1, "notebook1");
+  GLADE_HOOKUP_OBJECT (dietecien, fixed12, "fixed12");
+  GLADE_HOOKUP_OBJECT (dietecien, fixed26, "fixed26");
+  GLADE_HOOKUP_OBJECT (dietecien, label14, "label14");
+  GLADE_HOOKUP_OBJECT (dietecien, combobox2, "combobox2");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel28, "detlabel28");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel19, "detlabel19");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel17000, "detlabel17000");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel1600, "detlabel1600");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel15000, "detlabel15000");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel17, "detlabel17");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel26, "detlabel26");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel25, "detlabel25");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel18000, "detlabel18000");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel21, "detlabel21");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel19, "detlabel19");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel20, "detlabel20");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel42, "detlabel42");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel27, "detlabel27");
+  GLADE_HOOKUP_OBJECT (dietecien, image2, "image2");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel18, "detlabel18");
+  GLADE_HOOKUP_OBJECT (dietecien, detspinbutton7, "detspinbutton7");
+  GLADE_HOOKUP_OBJECT (dietecien, detspinbutton8, "detspinbutton8");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel53141414, "detlabel53141414");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel22, "detlabel22");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel014, "detlabel014");
+  GLADE_HOOKUP_OBJECT (dietecien, fixed27, "fixed27");
+  GLADE_HOOKUP_OBJECT (dietecien, dettreeview1, "dettreeview1");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel30, "detlabel30");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel51777777777, "detlabel51777777777");
+  GLADE_HOOKUP_OBJECT (dietecien, detentry11, "detentry11");
+  GLADE_HOOKUP_OBJECT (dietecien, detbutton5444444, "detbutton5444444");
+  GLADE_HOOKUP_OBJECT (dietecien, alignment2, "alignment2");
+  GLADE_HOOKUP_OBJECT (dietecien, hbox2, "hbox2");
+  GLADE_HOOKUP_OBJECT (dietecien, image4, "image4");
+  GLADE_HOOKUP_OBJECT (dietecien, label52, "label52");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel15, "detlabel15");
+  GLADE_HOOKUP_OBJECT (dietecien, fixed21, "fixed21");
+  GLADE_HOOKUP_OBJECT (dietecien, detentry6, "detentry6");
+  GLADE_HOOKUP_OBJECT (dietecien, detentry7, "detentry7");
+  GLADE_HOOKUP_OBJECT (dietecien, detentry8, "detentry8");
+  GLADE_HOOKUP_OBJECT (dietecien, detentry9, "detentry9");
+  GLADE_HOOKUP_OBJECT (dietecien, detentry10, "detentry10");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel48, "detlabel48");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel47, "detlabel47");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel46, "detlabel46");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel45, "detlabel45");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel44, "detlabel44");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel41, "detlabel41");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel43, "detlabel43");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel34, "detlabel34");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel38, "detlabel38");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel37, "detlabel37");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel40, "detlabel40");
+  GLADE_HOOKUP_OBJECT (dietecien, detentry12, "detentry12");
+  GLADE_HOOKUP_OBJECT (dietecien, detbutton6, "detbutton6");
+  GLADE_HOOKUP_OBJECT (dietecien, alignment1, "alignment1");
+  GLADE_HOOKUP_OBJECT (dietecien, hbox1, "hbox1");
+  GLADE_HOOKUP_OBJECT (dietecien, image3, "image3");
+  GLADE_HOOKUP_OBJECT (dietecien, label49, "label49");
+  GLADE_HOOKUP_OBJECT (dietecien, detentry13, "detentry13");
+  GLADE_HOOKUP_OBJECT (dietecien, detspinbutton1, "detspinbutton1");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel42, "detlabel42");
+  GLADE_HOOKUP_OBJECT (dietecien, detspinbutton2, "detspinbutton2");
+  GLADE_HOOKUP_OBJECT (dietecien, detspinbutton3, "detspinbutton3");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel31, "detlabel31");
+  GLADE_HOOKUP_OBJECT (dietecien, detspinbutton97474, "detspinbutton97474");
+  GLADE_HOOKUP_OBJECT (dietecien, detspinbutton10, "detspinbutton10");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel39, "detlabel39");
+  GLADE_HOOKUP_OBJECT (dietecien, detlabel36, "detlabel36");
+  GLADE_HOOKUP_OBJECT (dietecien, detabel16, "detabel16");
+=======
   fixed9 = gtk_fixed_new ();
   gtk_widget_show (fixed9);
   gtk_container_add (GTK_CONTAINER (dietecien), fixed9);
@@ -1776,6 +2377,7 @@ create_dietecien (void)
   GLADE_HOOKUP_OBJECT_NO_REF (dietecien, dietecien, "dietecien");
   GLADE_HOOKUP_OBJECT (dietecien, fixed9, "fixed9");
   GLADE_HOOKUP_OBJECT (dietecien, label12, "label12");
+>>>>>>> 77272246bd4dcfe949a2e5806fb78ebd17478063
 
   return dietecien;
 }
@@ -1808,6 +2410,8 @@ create_kine (void)
   return kine;
 }
 
+<<<<<<< HEAD
+=======
 GtkWidget*
 create_test (void)
 {
@@ -1835,3 +2439,4 @@ create_test (void)
   return test;
 }
 
+>>>>>>> 77272246bd4dcfe949a2e5806fb78ebd17478063

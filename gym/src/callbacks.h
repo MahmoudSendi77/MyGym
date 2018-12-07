@@ -18,6 +18,14 @@ on_button4_clicked                     (GtkWidget       *objet_graphique,
                                         gpointer         user_data);
 
 void
+<<<<<<< HEAD
+on_detbutton6_clicked                  (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_detbutton5444444_clicked            (GtkButton       *button,
+                                        gpointer         user_data);
+=======
 on_button9_clicked                     (GtkWidget       *objet_graphique,
                                         gpointer         user_data);
 void
@@ -66,3 +74,4 @@ void
 on_affichetree_clicked                 (GtkWidget       *objet,
                                         gpointer         user_data);
 
+>>>>>>> 77272246bd4dcfe949a2e5806fb78ebd17478063

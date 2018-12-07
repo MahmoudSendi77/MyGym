@@ -244,6 +244,11 @@ else if(strcmp(compt,"medecin")==0){
 rolx=2;
 }
 
+<<<<<<< HEAD
+
+void
+on_detbutton6_clicked                  (GtkButton       *button,
+=======
 ajouter(cin2,password11,rolx,username1,prenom1,mail1,abonnement1,telephone1,ddj1,ddm1,dda1,dfj1,dfm1,dfa1);
 gtk_label_set_text(GTK_LABEL(label90),"inscription réusite.");
 }
@@ -281,12 +286,22 @@ on_button14adh_clicked                 (GtkButton       *button,
 
 void
 on_button15adh_clicked                 (GtkButton       *button,
+>>>>>>> 77272246bd4dcfe949a2e5806fb78ebd17478063
                                         gpointer         user_data)
 {
 
 }
 
 
+<<<<<<< HEAD
+void
+on_detbutton5444444_clicked            (GtkButton       *button,
+                                        gpointer         user_data)
+{
+
+}
+
+=======
 
 GtkWidget *admin;
 void
@@ -376,3 +391,4 @@ afficher_staf_coach(treeview2);
 
 
 
+>>>>>>> 77272246bd4dcfe949a2e5806fb78ebd17478063

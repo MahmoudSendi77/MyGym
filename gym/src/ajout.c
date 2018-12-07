@@ -34,7 +34,11 @@ enum
 void ajouter(long cin2,char password1[] , int rolx ,char prenom[] ,char username1[],char mail1[] ,char abonnement1[] ,long telephone1,int ddj,int ddm,int dda,int dfj,int dfm,int dfa)
 {
 FILE *f;
+<<<<<<< HEAD
+f=fopen("/home/dhia006/MyGym/gym/src/login.txt","a");
+=======
 f=fopen("/home/jasser/Desktop/MyGym/gym/src/info_users.txt","a");
+>>>>>>> 77272246bd4dcfe949a2e5806fb78ebd17478063
 if(f!=NULL)
 {fprintf(f,"%ld %s %d %s %s %s %s %ld %d %d %d %d %d %d \n",cin2,password1,rolx,username1, prenom,mail1,abonnement1,telephone1,ddj,ddm,dda,dfj,dfm,dfa);
 fclose(f);
