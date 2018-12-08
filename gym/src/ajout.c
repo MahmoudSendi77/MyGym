@@ -30,6 +30,10 @@ enum
 };
 
 
+
+
+
+
 //fonction ajouter nouveaux compt
 void ajouter(long cin2,char password1[] , int rolx ,char prenom[] ,char username1[],char mail1[] ,char abonnement1[] ,long telephone1,int ddj,int ddm,int dda,int dfj,int dfm,int dfa)
 {
@@ -204,7 +208,31 @@ rename("/home/jasser/Desktop/MyGym/gym/src/aux.txt","/home/jasser/Desktop/MyGym/
 printf("pos911111111111111111111111111111\n");
 return m;
 }
-
+//*********************************************************************************
+//logs sauvegarde
+void logs_set(char cin[],int role){
+FILE *f;
+f=fopen("/home/jasser/Desktop/MyGym/gym/src/logs.txt","a");
+if(f!=NULL)
+{fprintf(f,"%s %d\n",cin,role);
+fclose(f);
+}
+}
+//********************************************************************************
+//logs get
+int logs_get(char cin100[],int *role100){
+FILE *f;
+int m=0;
+f=fopen("/home/jasser/Desktop/MyGym/gym/src/logs.txt","a");
+if (f!=NULL)
+{
+while(fscanf(f,"%s %d",cin100,role100)!=EOF)
+{
+}
+}
+return *role100;
+}
+//********************************************************************************
 
 //modifier compt
 int modifier_adherent (long cin10,char password10[], int rol10 ,char username10[], char prenom10[],char mail10[] ,char abonnement10[] ,long telephone10,int ddj10,int ddm10,int dda10,int dfj10,int dfm10,int dfa10){

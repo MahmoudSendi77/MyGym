@@ -14,7 +14,8 @@ gym_SOURCES = \
 	callbacks.c callbacks.h \
 	verifier.c verifier.h \
 	ajout.c ajout.h \
-	affichage.c affichage.h
+	affichage.c affichage.h \
+	afichage_fenetre.c afichage_fenetre.h
 
 gym_LDADD = @PACKAGE_LIBS@ $(INTLLIBS)
 

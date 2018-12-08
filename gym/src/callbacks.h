@@ -66,3 +66,24 @@ void
 on_affichetree_clicked                 (GtkWidget       *objet,
                                         gpointer         user_data);
 
+
+void
+on_ajouter_admin_clicked               (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_adherent_set_focus                  (GtkWindow       *window,
+                                        GtkWidget       *widget,
+                                        gpointer         user_data);
+
+void
+on_button18_clicked                    (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_button19_leave                      (GtkButton       *button,
+                                        gpointer         user_data);
+
+void
+on_button20_clicked                    (GtkButton       *button,
+                                        gpointer         user_data);
